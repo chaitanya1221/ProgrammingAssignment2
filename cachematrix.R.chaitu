@@ -1,0 +1,34 @@
+## Put comments here that give an overall description of what your
+## functions do
+
+## Write a short comment describing this function
+
+makeCacheMatrix <- function(x = numeric()
+  n <- NULL
+  Set <- function(y) {
+     x <<- y
+     m <<-NULL
+}
+ get <-function() x
+ Setmean <- function(mean) m <<- mean
+ Getmean <- function() m
+ List(set = set,get = get,
+      Setmean = setmean,
+      Getmean = getmean)
+}
+ 
+
+## Write a short comment describing this function
+
+cacheSolve <- function(x, ...) {
+        m <- x$getmean()
+        if(1is.null(m)){
+        message("getting cached data")
+        Return(m)
+        }
+        data <- x$get()
+        m <- mean(data,....)
+        x$setmean(m)
+        m
+
+}
